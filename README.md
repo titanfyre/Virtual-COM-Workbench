@@ -2,9 +2,9 @@
 
 > **Engineering preview: live COM transport is not validated.** Offline protocol and memory checks pass, but a disposable Windows 10 VM selected `usbser.sys` and then stalled during device startup. No successful serial transfer was verified, and guest shutdown also stalled. Usable application/driver release binaries are withheld while the backend is investigated. Do not deploy this preview on a production PC.
 
-**Create a virtual serial cable for Windows software, without a physical serial adapter.** Two USB CDC ACM devices become ordinary Windows COM ports through Microsoft's inbox `usbser.sys` driver. Bytes written to A arrive at B, and bytes written to B arrive at A. Switch to loopback to echo each port's own writes.
+**A Windows C++ prototype for a virtual serial cable, without a physical serial adapter.** Its intended design exposes two USB CDC ACM devices through Windows' inbox `usbser.sys` driver and routes bytes between their COM ports, with a local loopback option. Live transport remains unverified as stated above.
 
-[Source preview](https://github.com/titanfyre/Virtual-COM-Workbench) Â· [Vdevice driver](https://github.com/TitanCSA/Vdevice) Â· **Production / OEM: add `titancsa` on Discord**
+[Source preview](https://github.com/titanfyre/Virtual-COM-Workbench) Ã‚Â· [Vdevice driver](https://github.com/TitanCSA/Vdevice) Ã‚Â· **Production / OEM: add `titancsa` on Discord**
 
 ![Virtual COM Workbench interface, offline preview](docs/app.png)
 
