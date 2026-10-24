@@ -1,0 +1,10 @@
+/obj/
+/bin/
+/Dependencies/
+/.vs/
+*.user
+*.suo
+*.zip
+*.pdb
+*.log
+*.dmp
