@@ -64,6 +64,12 @@ The source uses the local test identity `FFFF:CDC1` with a unique serial for eac
 
 ## Build
 
+The matching Vdevice demo driver source is available; see
+[driver/README.md](driver/README.md) for build instructions and separate
+evaluation-source terms. Those terms apply to Titan-authored driver code. Third-party
+source licenses and existing application/SDK licenses remain applicable. Full/commercial
+implementation and private signing or activation material are excluded.
+
 Windows 10/11 x64, Visual Studio 2022 **Desktop development with C++**, Windows SDK and CMake:
 
 ```powershell
@@ -71,7 +77,7 @@ Windows 10/11 x64, Visual Studio 2022 **Desktop development with C++**, Windows 
 .\Build.ps1 -AddressSanitizer
 ```
 
-Outputs are in `obj/Build/bin/`. The project is C++17 with a native Win32 interface and no downloaded build dependency. The unchanged Vdevice user-mode SDK is included in `SDK/`; kernel source is not included.
+Outputs are in `obj/Build/bin/`. The project is C++17 with a native Win32 interface and no downloaded build dependency. The unchanged Vdevice user-mode SDK is included in `SDK/`; Demo/evaluation driver source is documented in [driver/README.md](driver/README.md).
 
 `App/Cdc.cpp` contains the descriptor/control model, `App/Session.cpp` owns routing and cleanup, and `App/Main.cpp` contains the UI and CLI entry points. Offline checks cover descriptor validation, strict controls, queue limits, byte preservation and 10,000 varied binary FIFO cycles. See [validation scope](docs/VALIDATION.md).
 
