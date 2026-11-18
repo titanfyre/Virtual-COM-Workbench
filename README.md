@@ -2,17 +2,6 @@
 
 > **Engineering preview: live COM transport is not validated.** Offline protocol and memory checks pass, but a disposable Windows 10 VM selected `usbser.sys` and then stalled during device startup. No successful serial transfer was verified, and guest shutdown also stalled. Usable application/driver release binaries are withheld while the backend is investigated. Do not deploy this preview on a production PC.
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Full version / production availability**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **Virtual COM Workbench** and ask about **full-version availability, production licensing or a commercial integration**.
->
-> Describe your intended use and target Windows versions so we can agree on the scope, availability and pricing.
-<!-- full-version-contact:end -->
-
 **A Windows C++ prototype for a virtual serial cable, without a physical serial adapter.** Its intended design exposes two USB CDC ACM devices through Windows' inbox `usbser.sys` driver and routes bytes between their COM ports, with a local loopback option. Live transport remains unverified as stated above.
 
 [Source preview](https://github.com/titanfyre/Virtual-COM-Workbench) Ã‚Â· [Vdevice driver](https://github.com/TitanCSA/Vdevice) Ã‚Â· **Production / OEM: add `titancsa` on Discord**
@@ -94,3 +83,16 @@ Microsoft's signature applies to the supplied driver package. It does not imply 
 This project is for lawful development, testing and integration on systems you own or are authorized to use. You are responsible for your use of the application, SDK and driver, including any illegal activity or damage. The software is supplied without warranty; see the licenses for the applicable terms.
 
 Protocol references: [Microsoft USB serial driver installation](https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-driver-installation-based-on-compatible-ids) and the [USB-IF CDC specifications](https://www.usb.org/documents?search=CDC).
+
+## Commercial integration and support
+
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Full version / production availability**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **Virtual COM Workbench** and ask about **full-version availability, production licensing or a commercial integration**.
+>
+> Describe your intended use and target Windows versions so we can agree on the scope, availability and pricing.
+<!-- full-version-contact:end -->
