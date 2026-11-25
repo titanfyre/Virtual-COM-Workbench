@@ -1,13 +1,16 @@
 # Virtual COM Workbench
 
+<!-- simple-start:start -->
+Explore how a virtual serial cable would work on Windows.
+
+**Start here.** Start with the offline preview. Real serial transfers still need validation.
+<!-- simple-start:end -->
+
 <!-- full-version-contact:start -->
 > [!IMPORTANT]
-> **Get the version without the one-hour demo limit**
+> **Version without the one-hour demo limit**
 >
-> **Discord · `titancsa`**. Open [Discord](https://discord.com/app), choose **Friends → Add Friend**, enter **`titancsa`** and send a message.
-> Send the project name and ask for its full version. TitanCSA will share the purchase details privately.
->
-> **FR · Version sans la limite d’une heure.** Ajoute **`titancsa`** sur Discord et envoie le nom du projet. Le lien d’achat est communiqué en privé.
+> In [Discord](https://discord.com/app), choose **Add Friend** and enter **`titancsa`**. Send the project name. Purchase details are sent privately.
 <!-- full-version-contact:end -->
 
 > **Engineering preview: live COM transport is not validated.** Offline protocol and memory checks pass, but a disposable Windows 10 VM selected `usbser.sys` and then stalled during device startup. No successful serial transfer was verified, and guest shutdown also stalled. Usable application/driver release binaries are withheld while the backend is investigated. Do not deploy this preview on a production PC.
@@ -95,5 +98,3 @@ This project is for lawful development, testing and integration on systems you o
 Protocol references: [Microsoft USB serial driver installation](https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-driver-installation-based-on-compatible-ids) and the [USB-IF CDC specifications](https://www.usb.org/documents?search=CDC).
 
 ## Commercial integration and support
-
-
