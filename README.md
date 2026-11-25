@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 Explore how a virtual serial cable would work on Windows.
 
-**Start here.** Start with the offline preview. Real serial transfers still need validation.
+[First steps](#first-steps) · [Develop](#build) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Start with the offline preview. Real serial transfers still need validation.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
